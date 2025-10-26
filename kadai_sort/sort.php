@@ -14,10 +14,10 @@
         function sort_2way($array, $order) {
           if ($order) {
             echo '昇順にソートします。<br>';
-            array_multisort($array, SORT_ASC);
+            sort($array, SORT_ASC);
           } else {
             echo '降順にソートします。<br>';
-            array_multisort($array, SORT_DESC);
+            rsort($array, SORT_DESC);
           }
 
           // ソート後の配列のデータを表示
